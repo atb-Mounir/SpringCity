@@ -19,6 +19,13 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	    // https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper
+    implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.45'
+    //https://mvnrepository.com/artifact/javax.servlet/jstl
+    implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
+        // https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc
+    implementation group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '9.4.0.jre11'
+    runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
 }
 
 test {
